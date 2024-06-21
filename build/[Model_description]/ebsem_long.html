@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Equilibrium-based shoreline evolution models (EBSEM) - Longshore &mdash;  v</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="../_static/doctools.js?v=888ff710"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Static equilibrium (Beach Planform)" href="equilibrium_planform.html" />
+    <link rel="prev" title="Equilibrium-based shoreline evolution models (EBSEM) - Cross-shore" href="ebsem_cross.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            IHSetDocs
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../%5BExamples%5D/examples.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../%5BInstallation%5D/installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ebsem_cross.html">Equilibrium-based shoreline evolution models (EBSEM) - Cross-shore</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Equilibrium-based shoreline evolution models (EBSEM) - Longshore</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#ihsetturki-turki-et-al-2013">IHSetTurki (Turki et al., 2013)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ihsetjaramillo21a-jaramillo-et-al-2021a">IHSetJaramillo21a (Jaramillo et al., 2021a)</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="equilibrium_planform.html">Static equilibrium (Beach Planform)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="equilibrium_profile.html">Static equilibrium (Beach Profile)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hybrid_model.html">HYBRID MODELS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ihset_model.html">Model formulation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="one_line.html">One-line Models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../%5BUser_manual%5D/ihset_manual.html">User manual</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">IHSetDocs</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Equilibrium-based shoreline evolution models (EBSEM) - Longshore</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/ihcantabria/IHSetDocs/blob/main/docs/[Model_description]/ebsem_long.md" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="equilibrium-based-shoreline-evolution-models-ebsem-longshore">
+<h1>Equilibrium-based shoreline evolution models (EBSEM) - Longshore<a class="headerlink" href="#equilibrium-based-shoreline-evolution-models-ebsem-longshore" title="Link to this heading"></a></h1>
+<section id="ihsetturki-turki-et-al-2013">
+<h2>IHSetTurki (Turki et al., 2013)<a class="headerlink" href="#ihsetturki-turki-et-al-2013" title="Link to this heading"></a></h2>
+<p>Unlike previously introduced beach advance/retreat caused by the incoming wave energy, the shoreline rotation depends on the longshore sediment transport where wave directionality is paramount. Under the assumption that the instantaneous shoreline position depends on that of equilibrium, Turki et al. (2013) proposed a simple shoreline evolution model for predicting the shoreline rotation. This model is useful to understand the dynamics of the shoreline evolution caused by wave direction. In addition, this model simply predicts temporal evolution in beach rotation.</p>
+<p>Turki et al. (2013) suggested a shoreline rotation model considering that the shoreline response rate can be expressed as proportional to the difference between the instantaneous position and the equilibrium rotation as follows (Fig. 2-4-1):</p>
+<p>$$
+\frac{∂R(t)}{∂t}=ω(R_∞-R(t))
+$$</p>
+<ul class="simple">
+<li><p>$ω$ : the ratio of beach change which is proportional to the characteristic time scale $T_s$ ($ω=1/T_s$)</p></li>
+<li><p>$R_∞$ : the equilibrium shoreline response</p></li>
+<li><p>$R(t)$ : the instantaneous position at time $t$</p></li>
+</ul>
+<p>$R_∞$ and $R(t)$ can be calculated geometrically as a function of the beach length l as below:</p>
+<p>$$
+R_∞=\frac{l}{2}tan⁡β
+$$
+$$
+R(t)=\frac{l}{2}tan⁡(α(t))
+$$</p>
+<ul class="simple">
+<li><p>$β$ : the angle between the initial shoreline position and the wave crest</p></li>
+<li><p>$α(t)$ : the shoreline rotation angle at time $t$</p></li>
+</ul>
+<p>According to the volumetric change based on the alongshore sediment transport, the characteristic $T_s$ is calculated as follows:</p>
+<p>$$
+T_s(t)=\frac{l^2h^*(tan⁡β-tan⁡(α(t)))}{4KF_rx(β,R(t))}
+$$</p>
+<ul class="simple">
+<li><p>$l$ : the beach length</p></li>
+<li><p>$K$ : the transport coefficient which is related to sediment characteristics such as sediment density $ρ_s$, water density $ρ_w$, gravity acceleration $g$, sediment porosity a and dimensionless proportionality coefficient $k$</p></li>
+<li><p>$F_r$ : the energy flux per unit required to move sediments</p></li>
+<li><p>$h^<em>$ : the closure depth which is expressed as the function of the wave height $H_s$ ($h^</em>=C_cH_s^{0.67}$; where $C_c$ is a constant value that differs from one beach to another)</p></li>
+<li><p>$x(β,R(t))$ : the coefficient which is defined as follows:</p></li>
+</ul>
+<p>$$
+x(β,R(t))=sin⁡(2β)-\frac{4R(t)}{l}cos(2β)
+$$</p>
+<p><img alt="Fig. 2_4_1" src="../_images/Figure2_4_1.png" />
+<strong>Fig. 2-4-1. Definition sketch of shoreline rotation model proposed by Turki et al. (2013).</strong></p>
+</section>
+<section id="ihsetjaramillo21a-jaramillo-et-al-2021a">
+<h2>IHSetJaramillo21a (Jaramillo et al., 2021a)<a class="headerlink" href="#ihsetjaramillo21a-jaramillo-et-al-2021a" title="Link to this heading"></a></h2>
+<p>Sever erosion can occur under storm waves with significant changes in wave, which makes the prediction of shoreline orientation very important. Jaramillo et al. (2021a) proposed an equilibrium-based shoreline rotation model which is a simple and efficient way to predict shoreline orientations. Based on previous research concepts and observation data, this model assumes that shoreline orientations depend on the incoming wave power and direction.</p>
+<p>Jaramillo et al. (2021a) suggested a shoreline rotation model that predicts the temporal evolution of the shoreline orientation based on the concept of previous research and the observation data as follows:</p>
+<p>$$
+\frac{∂α_s(t)}{∂t}=L^±P(α_s-α_{s,eq})
+$$</p>
+<ul class="simple">
+<li><p>$P$ : the incoming wave power related to the significant wave height $H_s$ and the wave peak period $T_p$ as $P=H_s^2T_p$</p></li>
+<li><p>$α_{s,eq}$ : the asymptotical equilibrium shoreline orientation</p></li>
+<li><p>$α_s(t)$ : the shoreline orientation at time $t$</p></li>
+<li><p>$L^±$ : the proportional constants where $L^+$ indicates the clockwise shoreline rotation and $L^-$ indicates the counterclockwise rotation, respectively</p></li>
+</ul>
+<p>Jaramillo et al. (2021a) suggested the linear relationship between the asymptotical equilibrium and the incident wave direction as follows:</p>
+<p>$$
+α_{s,eq}=\frac{θ-b’}{a’}
+$$</p>
+<ul class="simple">
+<li><p>$θ$ : the incident wave direction</p></li>
+<li><p>$a’,b’$ : the empirical parameters that satisfy the linear relationship</p></li>
+</ul>
+<p><img alt="Fig. 2_4_2" src="../_images/Figure2_4_2.png" />
+<strong>Fig. 2-4-2. Definition sketch of shoreline rotation model proposed by Jaramillo et al. (2021a).</strong></p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="ebsem_cross.html" class="btn btn-neutral float-left" title="Equilibrium-based shoreline evolution models (EBSEM) - Cross-shore" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="equilibrium_planform.html" class="btn btn-neutral float-right" title="Static equilibrium (Beach Planform)" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Lim, Changbin.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
