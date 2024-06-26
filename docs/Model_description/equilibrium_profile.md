@@ -15,6 +15,7 @@ $$
 - $A$ : the Dean parameter
 
 ![Fig. 2_1_1](images/Figure2_1_1.png)
+
 **Fig. 2-1-1. Definition sketch of equilibrium beach profile model (Dean, 1991).**
 
 ## IHSetBernabeu (Bernabeu et al., 2003)
