@@ -73,3 +73,18 @@ The following figure shows a preliminary list of the models to be included in th
 - Miller, J. K., Dean, R. G., 2004. A simple new shoreline change model. Coast. Eng. 51, 7, 531–556. https://doi.org/10.1016/j.coastaleng.2004.05.006.
 - Turki, I., Medina, R., Coco, G., Gonzalez, M., 2013. An equilibrium model to predict shoreline rotation of pocket beaches. Mar. Geol. 346, 220–232. http://dx.doi.org/10.1016/j.margeo.2013.08.002
 - Yates, M.L., Guza, R.T., O’Reilly, W.C., 2009. Equilibrium shoreline response: Observations and modeling. J. Geophys. Res. Ocean. 114, 1–16. https://doi.org/10.1029/2009JC005359
+
+```{toctree}
+:maxdepth: 2
+:caption: Contents:
+
+[Examples]/examples.md
+[Installation]/installation.md
+[Model_description]/ebsem_cross.md
+[Model_description]/ebsem_long.md
+[Model_description]/equilibrium_planform.md
+[Model_description]/equilibrium_profile.md
+[Model_description]/hybrid_model.md
+[Model_description]/ihset_model.md
+[Model_description]/one_line.md
+[User_manual]/ihset_manual.md
