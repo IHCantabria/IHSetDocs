@@ -36,9 +36,9 @@ templates_path = ["_templates"]
 exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
 mathjax_config = {
     "tex2jax": {
-      "inlineMath": [ ["$","$"]],
-      "displayMath": [ ["$$","$$"]],
-    },        
+        "inlineMath": [["\\(", "\\)"], ["$", "$"]],
+        "displayMath": [["\\[", "\\]"], ["$$", "$$"]],
+    },
     "TeX": {
         "extensions": ["AMSmath.js", "AMSsymbols.js"],
     },
