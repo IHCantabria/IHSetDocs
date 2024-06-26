@@ -29,12 +29,16 @@ extensions = [
     "sphinx.ext.autosummary",
     "sphinx.ext.mathjax",
     "sphinx.ext.githubpages",
-    "sphinx_math_dollar"
+    "sphinx_math_dollar",
 ]
 
 templates_path = ["_templates"]
 exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
 mathjax_config = {
+    "tex2jax": {
+      "inlineMath": [ ["$","$"]],
+      "displayMath": [ ["$$","$$"]],
+    },        
     "TeX": {
         "extensions": ["AMSmath.js", "AMSsymbols.js"],
     },
