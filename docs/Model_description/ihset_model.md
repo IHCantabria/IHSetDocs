@@ -36,7 +36,7 @@ The IH-MOOSE model incorporates processes described by Jaramillo et al. (2021b),
 - [IHSetJaramillo21a (Jaramillo et al., 2021a)](ebsem_long.md#ihsetjaramillo21a-jaramillo-et-al-2021a)
 
 
-### One-line models.
+### One-line models
 
 One-line models are most commonly used to estimate long-term mean changes due to longitudinal sediment transport. These models use the sediment conservation formula considering turbulent flow and empirical longitudinal transport relationships, without addressing cross-shore transport. They assume that the profile maintains a constant shape that shifts seaward or landward during simulations, which means that they cannot be applied for the analysis of short-term changes in which transverse transport across the beach profile is significant. Within this typology, it is worth highlighting the CHRONOS model developed by the IGC Group of IHCantabria. This is a one-line model that simulates medium- to long-term changes (years), including wave propagation with the Ref-Dif OLUCA and Refract models, then updating the bathymetry for propagation and its evolution while preserving the sediment balance throughout the process.
 
