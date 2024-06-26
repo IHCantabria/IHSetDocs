@@ -71,4 +71,5 @@ $$
 - $a',b'$ : the empirical parameters that satisfy the linear relationship
 
 ![Fig. 2_4_2](images/Figure2_4_2.png)
+
 **Fig. 2-4-2. Definition sketch of shoreline rotation model proposed by Jaramillo et al. (2021a).**

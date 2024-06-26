@@ -29,35 +29,25 @@ This document outlines succinct technical descriptions of the chosen models, whi
 A schematic infographic is presented in Fig. 1-1, offering an overview of the IH-SET's general structure.
 
 ![Fig. 1-1](images/Figure0_1.png)
+
 **Fig. 1-1. The general structure of the IH-SET.**
 
 To ensure a unified and comprehensive understanding, each model comes with concise metadata descriptions.
 The following figure shows a preliminary list of the models to be included in the IH-SET. The tool will start with the models highlighted in green, which correspond to the expressions developed by the Coastal Management and Engineering Group of IHCantabria.
 
 ![Fig. 1-2](images/Figure0_2.png) 
+
 **Fig. 1-2. The general structure of the IH-SET.**
 
 ## Contents
 
 ### [User manual](User_manual/ihset_manual.md)
-- [Requirements](User_manual/ihset_manual.md)
-- [Data preprocessing](User_manual/ihset_manual.md)
-- [User tutorial](User_manual/ihset_manual.md)
 
 ### [Model formulation](Model_description/ihset_model.md)
-- [Static equilibrium (Beach profile)](Model_description/equilibrium_profile.md)
-- [Static equilibrium (Beach planform)](Model_description/equilibrium_planform.md)
-- [EBSEM - Cross-shore ](Model_description/ebsem_cross.md)
-- [EBSEM - Longshore ](Model_description/ebsem_long.md)
-- [One-line models](Model_description/one_line.md)
-- [Hybrid models](Model_description/hybrid_model.md)
 
 ### [Examples](Examples/examples.md)
-- [Examples](Examples/examples.md)
-- [Gallaries](Examples/examples.md)
 
 ### [Installation](Installation/installation.md)
-- [Installation](Installation/installation.md)
 
 ## Bibliography
 
@@ -78,13 +68,7 @@ The following figure shows a preliminary list of the models to be included in th
 :maxdepth: 2
 :caption: Contents
 
+User_manual/ihset_manual.md
+Model_description/ihset_model.md
 Examples/examples.md
 Installation/installation.md
-Model_description/ebsem_cross.md
-Model_description/ebsem_long.md
-Model_description/equilibrium_planform.md
-Model_description/equilibrium_profile.md
-Model_description/hybrid_model.md
-Model_description/ihset_model.md
-Model_description/one_line.md
-User_manual/ihset_manual.md
