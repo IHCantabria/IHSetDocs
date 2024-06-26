@@ -43,6 +43,7 @@ x(β,R(t))=sin⁡(2β)-\frac{4R(t)}{l}cos(2β)
 $$
 
 ![Fig. 2_4_1](images/Figure2_4_1.png)
+
 **Fig. 2-4-1. Definition sketch of shoreline rotation model proposed by Turki et al. (2013).**
 
 ## IHSetJaramillo21a (Jaramillo et al., 2021a)
