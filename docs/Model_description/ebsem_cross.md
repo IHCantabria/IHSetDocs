@@ -26,6 +26,7 @@ $$
 - $W^*$ : the width of the active surf zone
 
 ![Fig. 2_3_1](images/Figure2_3_1.png)
+
 **Fig. 2-3-1. Definition sketch of shoreline evolution according the change of water level owing to storm surge and wave setup (Miller and Dean, 2004).**
 
 ## IHSetYates (Yates et al., 2009)
@@ -55,6 +56,7 @@ $$
 Fig. 2-3-2 shows wave energy and the mean shoreline change rate according to the mean shoreline position.
 
 ![Fig. 2_3_2](images/Figure2_3_2.png)
+
 **Fig. 2-3-2. Wave energy and mean shoreline change rate according to the mean shoreline position (Yates et al., 2009).**
 
 ## IHSetShorefor (Davidson et al., 2013)
@@ -109,6 +111,7 @@ $$
 Fig. 2-3-3 shows that model predictions with a linear trend term outperform those without the term.
 
 ![Fig. 2_3_3](images/Figure2_3_3.png)
+
 **Fig. 2-3-3. Concept of the shoreline evolution model with the linear trend term proposed by Jaramillo et al. (2020).**
 
 ## IHSetLim (Lim et al., 2020)
