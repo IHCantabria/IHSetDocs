@@ -45,4 +45,5 @@ $$
 Here, $h_r$ is the discontinuity point of water depth from the mean sea level.
 
 ![Fig. 2_1_2](images/Figure2_1_2.png)
+
 **Fig. 2-1-2. Definition sketch of equilibrium beach profile model (Bernabeu et al, 2003).**
