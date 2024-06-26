@@ -27,6 +27,7 @@ extensions = [
     "sphinx_rtd_theme",
     "myst_nb",
     "sphinx.ext.mathjax",
+    # 'sphinxcontrib.autodoc_pydantic',
     "sphinx.ext.autosummary",
 ]
 templates_path = ["_templates"]
