@@ -7,7 +7,7 @@
   <title>One-line Models &mdash;  v</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
-      <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+      <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
 
   
   <!--[if lt IE 9]>
@@ -22,8 +22,8 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="User manual" href="../User_manual/ihset_manual.html" />
-    <link rel="prev" title="Model formulation" href="ihset_model.html" /> 
+    <link rel="next" title="Examples" href="../Examples/examples.html" />
+    <link rel="prev" title="HYBRID MODELS" href="hybrid_model.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -47,20 +47,26 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../Examples/examples.html">Examples</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../Installation/installation.html">Installation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ebsem_cross.html">Equilibrium-based shoreline evolution models (EBSEM) - Cross-shore</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ebsem_long.html">Equilibrium-based shoreline evolution models (EBSEM) - Longshore</a></li>
-<li class="toctree-l1"><a class="reference internal" href="equilibrium_planform.html">Static equilibrium (Beach Planform)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="equilibrium_profile.html">Static equilibrium (Beach Profile)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="hybrid_model.html">HYBRID MODELS</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ihset_model.html">Model formulation</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">One-line Models</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#genesis-hanson-and-kraus-1989">GENESIS (Hanson and Kraus, 1989)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#chronos-xxxx-xxxx">CHRONOS (XXXX, XXXX)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../User_manual/ihset_manual.html">User manual</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="ihset_model.html">Model formulation</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="ihset_model.html#overview">Overview</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="ihset_model.html#contents">Contents</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="equilibrium_profile.html">Static equilibrium (Beach Profile)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="equilibrium_planform.html">Static equilibrium (Beach Planform)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ebsem_cross.html">Equilibrium-based shoreline evolution models (EBSEM) - Cross-shore</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ebsem_long.html">Equilibrium-based shoreline evolution models (EBSEM) - Longshore</a></li>
+<li class="toctree-l3"><a class="reference internal" href="hybrid_model.html">HYBRID MODELS</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">One-line Models</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#genesis-hanson-and-kraus-1989">GENESIS (Hanson and Kraus, 1989)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#chronos-xxxx-xxxx">CHRONOS (XXXX, XXXX)</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../User_manual/ihset_manual.html">User manual</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Examples/examples.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Installation/installation.html">Installation</a></li>
 </ul>
 
         </div>
@@ -77,6 +83,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="ihset_model.html">Model formulation</a></li>
       <li class="breadcrumb-item active">One-line Models</li>
       <li class="wy-breadcrumbs-aside">
               <a href="https://github.com/ihcantabria/IHSetDocs/blob/main/docs/Model_description/one_line.md" class="fa fa-github"> Edit on GitHub</a>
@@ -93,8 +100,8 @@
 <h2>GENESIS (Hanson and Kraus, 1989)<a class="headerlink" href="#genesis-hanson-and-kraus-1989" title="Link to this heading"></a></h2>
 <p>The one-line model is a long-term shoreline evolution model that calculates shoreline movements based on longshore sediment transport (LTS) gradients. The model is built with the assumption that the beach profile does not change with time in the long term. The model is suitable for sandy beaches with LST gradients over time.</p>
 <p>The numerical domain is defined by a reference line and transects extending from this line towards the sea. While the transects and reference line are defined by their initial and final coordinates in any metric system, UTM coordinates are preferred to obtain the shoreline response in real-world coordinates. Fig. 2-5-1 presents a sketch of the one-line domain.</p>
-<p><img alt="Fig. 2_5_1" src="../_images/Figure2_5_1.png" />
-<strong>Fig. 2-5-1. Definition sketch of the one-line model proposed by Hanson and Kraus (1989).</strong></p>
+<p><img alt="Fig. 2_5_1" src="../_images/Figure2_5_1.png" /></p>
+<p><strong>Fig. 2-5-1. Definition sketch of the one-line model proposed by Hanson and Kraus (1989).</strong></p>
 <p>The model’s formulation is:</p>
 <p>$$
 \frac{∂y}{∂t}+\frac{1}{(h^*+h_{Berm})}(\frac{∂Q}{∂x+q}) = 0
@@ -130,8 +137,8 @@ $$</p>
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="ihset_model.html" class="btn btn-neutral float-left" title="Model formulation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="../User_manual/ihset_manual.html" class="btn btn-neutral float-right" title="User manual" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="hybrid_model.html" class="btn btn-neutral float-left" title="HYBRID MODELS" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../Examples/examples.html" class="btn btn-neutral float-right" title="Examples" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

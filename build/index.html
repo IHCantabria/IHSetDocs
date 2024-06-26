@@ -7,7 +7,7 @@
   <title>IH-SET Manual &mdash;  v</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
-      <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+      <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
 
   
   <!--[if lt IE 9]>
@@ -22,7 +22,7 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Examples" href="Examples/examples.html" /> 
+    <link rel="next" title="User manual" href="User_manual/ihset_manual.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -46,16 +46,10 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="User_manual/ihset_manual.html">User manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Model_description/ihset_model.html">Model formulation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Examples/examples.html">Examples</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Installation/installation.html">Installation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Model_description/ebsem_cross.html">Equilibrium-based shoreline evolution models (EBSEM) - Cross-shore</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Model_description/ebsem_long.html">Equilibrium-based shoreline evolution models (EBSEM) - Longshore</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Model_description/equilibrium_planform.html">Static equilibrium (Beach Planform)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Model_description/equilibrium_profile.html">Static equilibrium (Beach Profile)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Model_description/hybrid_model.html">HYBRID MODELS</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Model_description/ihset_model.html">Model formulation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Model_description/one_line.html">One-line Models</a></li>
-<li class="toctree-l1"><a class="reference internal" href="User_manual/ihset_manual.html">User manual</a></li>
 </ul>
 
         </div>
@@ -103,46 +97,26 @@
 <p>This project aims, on the one hand, to develop the IH-Shoreline Evolution Tool (IH-SET) to unify various morphodynamic models, allowing efficient forecasting of future coastline changes according to the scope and purpose of the project required by the user. On the other hand, a new model of coastline evolution will be developed by integrating transverse and longitudinal sediment transport processes, which will preserve sediment balance.</p>
 <p>This document outlines succinct technical descriptions of the chosen models, which will be seamlessly integrated into the Shoreline Evolution Tools (IH-SET). These modular tools empower engineers and coastal managers to investigate morphodynamic studies across diverse spatial and temporal ranges, whether it be within a project or while assessing a beach as a physiographic entity.</p>
 <p>A schematic infographic is presented in Fig. 1-1, offering an overview of the IH-SET’s general structure.</p>
-<p><img alt="Fig. 1-1" src="_images/Figure0_1.png" />
-<strong>Fig. 1-1. The general structure of the IH-SET.</strong></p>
+<p><img alt="Fig. 1-1" src="_images/Figure0_1.png" /></p>
+<p><strong>Fig. 1-1. The general structure of the IH-SET.</strong></p>
 <p>To ensure a unified and comprehensive understanding, each model comes with concise metadata descriptions.
 The following figure shows a preliminary list of the models to be included in the IH-SET. The tool will start with the models highlighted in green, which correspond to the expressions developed by the Coastal Management and Engineering Group of IHCantabria.</p>
-<p><img alt="Fig. 1-2" src="_images/Figure0_2.png" />
-<strong>Fig. 1-2. The general structure of the IH-SET.</strong></p>
+<p><img alt="Fig. 1-2" src="_images/Figure0_2.png" /></p>
+<p><strong>Fig. 1-2. The general structure of the IH-SET.</strong></p>
 </section>
 <section id="contents">
 <h2>Contents<a class="headerlink" href="#contents" title="Link to this heading"></a></h2>
 <section id="user-manual">
 <h3><a class="reference internal" href="User_manual/ihset_manual.html"><span class="std std-doc">User manual</span></a><a class="headerlink" href="#user-manual" title="Link to this heading"></a></h3>
-<ul class="simple">
-<li><p><a class="reference internal" href="User_manual/ihset_manual.html"><span class="std std-doc">Requirements</span></a></p></li>
-<li><p><a class="reference internal" href="User_manual/ihset_manual.html"><span class="std std-doc">Data preprocessing</span></a></p></li>
-<li><p><a class="reference internal" href="User_manual/ihset_manual.html"><span class="std std-doc">User tutorial</span></a></p></li>
-</ul>
 </section>
 <section id="model-formulation">
 <h3><a class="reference internal" href="Model_description/ihset_model.html"><span class="std std-doc">Model formulation</span></a><a class="headerlink" href="#model-formulation" title="Link to this heading"></a></h3>
-<ul class="simple">
-<li><p><a class="reference internal" href="Model_description/equilibrium_profile.html"><span class="std std-doc">Static equilibrium (Beach profile)</span></a></p></li>
-<li><p><a class="reference internal" href="Model_description/equilibrium_planform.html"><span class="std std-doc">Static equilibrium (Beach planform)</span></a></p></li>
-<li><p><a class="reference internal" href="Model_description/ebsem_cross.html"><span class="std std-doc">EBSEM - Cross-shore </span></a></p></li>
-<li><p><a class="reference internal" href="Model_description/ebsem_long.html"><span class="std std-doc">EBSEM - Longshore </span></a></p></li>
-<li><p><a class="reference internal" href="Model_description/one_line.html"><span class="std std-doc">One-line models</span></a></p></li>
-<li><p><a class="reference internal" href="Model_description/hybrid_model.html"><span class="std std-doc">Hybrid models</span></a></p></li>
-</ul>
 </section>
 <section id="examples">
 <h3><a class="reference internal" href="Examples/examples.html"><span class="std std-doc">Examples</span></a><a class="headerlink" href="#examples" title="Link to this heading"></a></h3>
-<ul class="simple">
-<li><p><a class="reference internal" href="Examples/examples.html"><span class="std std-doc">Examples</span></a></p></li>
-<li><p><a class="reference internal" href="Examples/examples.html"><span class="std std-doc">Gallaries</span></a></p></li>
-</ul>
 </section>
 <section id="installation">
 <h3><a class="reference internal" href="Installation/installation.html"><span class="std std-doc">Installation</span></a><a class="headerlink" href="#installation" title="Link to this heading"></a></h3>
-<ul class="simple">
-<li><p><a class="reference internal" href="Installation/installation.html"><span class="std std-doc">Installation</span></a></p></li>
-</ul>
 </section>
 </section>
 <section id="bibliography">
@@ -164,36 +138,10 @@ The following figure shows a preliminary list of the models to be included in th
 <div class="toctree-wrapper compound">
 <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="Examples/examples.html">Examples</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Examples/examples.html#id1">Examples</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Examples/examples.html#gallaries">Gallaries</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="Installation/installation.html">Installation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Model_description/ebsem_cross.html">Equilibrium-based shoreline evolution models (EBSEM) - Cross-shore</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Model_description/ebsem_cross.html#ihsetmillerdean-miller-and-dean-2004">IHSetMillerDean (Miller and Dean, 2004)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Model_description/ebsem_cross.html#ihsetyates-yates-et-al-2009">IHSetYates (Yates et al., 2009)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Model_description/ebsem_cross.html#ihsetshorefor-davidson-et-al-2013">IHSetShorefor (Davidson et al., 2013)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Model_description/ebsem_cross.html#ihsetjaramillo-jaramillo-et-al-2020">IHSetJaramillo (Jaramillo et al., 2020)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Model_description/ebsem_cross.html#ihsetlim-lim-et-al-2020">IHSetLim (Lim et al., 2020)</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="Model_description/ebsem_long.html">Equilibrium-based shoreline evolution models (EBSEM) - Longshore</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Model_description/ebsem_long.html#ihsetturki-turki-et-al-2013">IHSetTurki (Turki et al., 2013)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Model_description/ebsem_long.html#ihsetjaramillo21a-jaramillo-et-al-2021a">IHSetJaramillo21a (Jaramillo et al., 2021a)</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="Model_description/equilibrium_planform.html">Static equilibrium (Beach Planform)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Model_description/equilibrium_planform.html#ihsetgonzalez-hsu-and-evans-1989-gonzalez-and-medina-2001">IHSetGonzalez (Hsu and Evans, 1989; Gonzalez and Medina, 2001)</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="Model_description/equilibrium_profile.html">Static equilibrium (Beach Profile)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Model_description/equilibrium_profile.html#ihsetdean-dean-1991">IHSetDean (Dean, 1991)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Model_description/equilibrium_profile.html#ihsetbernabeu-bernabeu-et-al-2003">IHSetBernabeu (Bernabeu et al., 2003)</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="Model_description/hybrid_model.html">HYBRID MODELS</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Model_description/hybrid_model.html#ihsetih-moose-jaramillo-et-al-2021b">IHSetIH-MOOSE (Jaramillo et al., 2021b)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="User_manual/ihset_manual.html">User manual</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="User_manual/ihset_manual.html#requirements">Requirements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="User_manual/ihset_manual.html#data-preprocessing">Data preprocessing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="User_manual/ihset_manual.html#user-tutorial">User tutorial</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="Model_description/ihset_model.html">Model formulation</a><ul>
@@ -201,17 +149,12 @@ The following figure shows a preliminary list of the models to be included in th
 <li class="toctree-l2"><a class="reference internal" href="Model_description/ihset_model.html#contents">Contents</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="Model_description/one_line.html">One-line Models</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Model_description/one_line.html#genesis-hanson-and-kraus-1989">GENESIS (Hanson and Kraus, 1989)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Model_description/one_line.html#chronos-xxxx-xxxx">CHRONOS (XXXX, XXXX)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Examples/examples.html">Examples</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Examples/examples.html#id1">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Examples/examples.html#gallaries">Gallaries</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="User_manual/ihset_manual.html">User manual</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="User_manual/ihset_manual.html#requirements">Requirements</a></li>
-<li class="toctree-l2"><a class="reference internal" href="User_manual/ihset_manual.html#data-preprocessing">Data preprocessing</a></li>
-<li class="toctree-l2"><a class="reference internal" href="User_manual/ihset_manual.html#user-tutorial">User tutorial</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="Installation/installation.html">Installation</a></li>
 </ul>
 </div>
 </section>
@@ -221,7 +164,7 @@ The following figure shows a preliminary list of the models to be included in th
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="Examples/examples.html" class="btn btn-neutral float-right" title="Examples" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="User_manual/ihset_manual.html" class="btn btn-neutral float-right" title="User manual" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

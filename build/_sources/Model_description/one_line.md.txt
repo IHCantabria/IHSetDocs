@@ -7,6 +7,7 @@ The one-line model is a long-term shoreline evolution model that calculates shor
 The numerical domain is defined by a reference line and transects extending from this line towards the sea. While the transects and reference line are defined by their initial and final coordinates in any metric system, UTM coordinates are preferred to obtain the shoreline response in real-world coordinates. Fig. 2-5-1 presents a sketch of the one-line domain.
 
 ![Fig. 2_5_1](images/Figure2_5_1.png)
+
 **Fig. 2-5-1. Definition sketch of the one-line model proposed by Hanson and Kraus (1989).**
 
 The model’s formulation is:

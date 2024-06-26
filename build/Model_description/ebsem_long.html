@@ -7,7 +7,7 @@
   <title>Equilibrium-based shoreline evolution models (EBSEM) - Longshore &mdash;  v</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
-      <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+      <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
 
   
   <!--[if lt IE 9]>
@@ -22,7 +22,7 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Static equilibrium (Beach Planform)" href="equilibrium_planform.html" />
+    <link rel="next" title="HYBRID MODELS" href="hybrid_model.html" />
     <link rel="prev" title="Equilibrium-based shoreline evolution models (EBSEM) - Cross-shore" href="ebsem_cross.html" /> 
 </head>
 
@@ -47,20 +47,26 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../Examples/examples.html">Examples</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../Installation/installation.html">Installation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ebsem_cross.html">Equilibrium-based shoreline evolution models (EBSEM) - Cross-shore</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Equilibrium-based shoreline evolution models (EBSEM) - Longshore</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#ihsetturki-turki-et-al-2013">IHSetTurki (Turki et al., 2013)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#ihsetjaramillo21a-jaramillo-et-al-2021a">IHSetJaramillo21a (Jaramillo et al., 2021a)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../User_manual/ihset_manual.html">User manual</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="ihset_model.html">Model formulation</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="ihset_model.html#overview">Overview</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="ihset_model.html#contents">Contents</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="equilibrium_profile.html">Static equilibrium (Beach Profile)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="equilibrium_planform.html">Static equilibrium (Beach Planform)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ebsem_cross.html">Equilibrium-based shoreline evolution models (EBSEM) - Cross-shore</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Equilibrium-based shoreline evolution models (EBSEM) - Longshore</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#ihsetturki-turki-et-al-2013">IHSetTurki (Turki et al., 2013)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ihsetjaramillo21a-jaramillo-et-al-2021a">IHSetJaramillo21a (Jaramillo et al., 2021a)</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="equilibrium_planform.html">Static equilibrium (Beach Planform)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="equilibrium_profile.html">Static equilibrium (Beach Profile)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="hybrid_model.html">HYBRID MODELS</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ihset_model.html">Model formulation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="one_line.html">One-line Models</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../User_manual/ihset_manual.html">User manual</a></li>
+<li class="toctree-l3"><a class="reference internal" href="hybrid_model.html">HYBRID MODELS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="one_line.html">One-line Models</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Examples/examples.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Installation/installation.html">Installation</a></li>
 </ul>
 
         </div>
@@ -77,6 +83,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="ihset_model.html">Model formulation</a></li>
       <li class="breadcrumb-item active">Equilibrium-based shoreline evolution models (EBSEM) - Longshore</li>
       <li class="wy-breadcrumbs-aside">
               <a href="https://github.com/ihcantabria/IHSetDocs/blob/main/docs/Model_description/ebsem_long.md" class="fa fa-github"> Edit on GitHub</a>
@@ -126,8 +133,8 @@ $$</p>
 <p>$$
 x(β,R(t))=sin⁡(2β)-\frac{4R(t)}{l}cos(2β)
 $$</p>
-<p><img alt="Fig. 2_4_1" src="../_images/Figure2_4_1.png" />
-<strong>Fig. 2-4-1. Definition sketch of shoreline rotation model proposed by Turki et al. (2013).</strong></p>
+<p><img alt="Fig. 2_4_1" src="../_images/Figure2_4_1.png" /></p>
+<p><strong>Fig. 2-4-1. Definition sketch of shoreline rotation model proposed by Turki et al. (2013).</strong></p>
 </section>
 <section id="ihsetjaramillo21a-jaramillo-et-al-2021a">
 <h2>IHSetJaramillo21a (Jaramillo et al., 2021a)<a class="headerlink" href="#ihsetjaramillo21a-jaramillo-et-al-2021a" title="Link to this heading"></a></h2>
@@ -150,8 +157,8 @@ $$</p>
 <li><p>$θ$ : the incident wave direction</p></li>
 <li><p>$a’,b’$ : the empirical parameters that satisfy the linear relationship</p></li>
 </ul>
-<p><img alt="Fig. 2_4_2" src="../_images/Figure2_4_2.png" />
-<strong>Fig. 2-4-2. Definition sketch of shoreline rotation model proposed by Jaramillo et al. (2021a).</strong></p>
+<p><img alt="Fig. 2_4_2" src="../_images/Figure2_4_2.png" /></p>
+<p><strong>Fig. 2-4-2. Definition sketch of shoreline rotation model proposed by Jaramillo et al. (2021a).</strong></p>
 </section>
 </section>
 
@@ -160,7 +167,7 @@ $$</p>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="ebsem_cross.html" class="btn btn-neutral float-left" title="Equilibrium-based shoreline evolution models (EBSEM) - Cross-shore" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="equilibrium_planform.html" class="btn btn-neutral float-right" title="Static equilibrium (Beach Planform)" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="hybrid_model.html" class="btn btn-neutral float-right" title="HYBRID MODELS" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

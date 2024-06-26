@@ -44,4 +44,5 @@ $$
 - $L^±$ : the proportional constants where $L^+$ indicates the clockwise shoreline rotation and $L^-$ indicates the counterclockwise rotation, respectively
 
 ![Fig. 2_6_1](images/Figure2_6_1.png)
+
 **Fig. 2-6-1. Definition sketch of hybrid shoreline evolution model proposed by Jaramillo et al. (2021b).**
