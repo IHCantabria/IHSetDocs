@@ -62,5 +62,5 @@ equilibrium_profile.md
 equilibrium_planform.md
 ebsem_cross.md
 ebsem_long.md
-hybrid_model.md
 one_line.md
+hybrid_model.md

@@ -28,8 +28,8 @@ extensions = [
     "myst_parser",
     "sphinx.ext.autosummary",
     "sphinx.ext.mathjax",
-    "sphinx_math_dollar",
     "sphinx.ext.githubpages",
+    "sphinx_math_dollar",
 ]
 
 templates_path = ["_templates"]
