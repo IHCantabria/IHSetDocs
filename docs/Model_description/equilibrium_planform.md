@@ -31,4 +31,5 @@ $$
 - $β_r$ : the angular parameter with a calculated value of 2.13 obtained by comparing 26 Spanish beaches
 
 ![Fig. 2_2_1](images/Figure2_2_1.png)
+
 **Fig. 2-2-1. Definition sketch of the static equilibrium planform proposed by González and Medina (2001).**
