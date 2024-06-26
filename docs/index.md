@@ -78,13 +78,13 @@ The following figure shows a preliminary list of the models to be included in th
 :maxdepth: 2
 :caption: Contents
 
-Examples/examples
-Installation/installation
-Model_description/ebsem_cross
-Model_description/ebsem_long
-Model_description/equilibrium_planform
-Model_description/equilibrium_profile
-Model_description/hybrid_model
-Model_description/ihset_model
-Model_description/one_line
-User_manual/ihset_manual
+Examples/examples.md
+Installation/installation.md
+Model_description/ebsem_cross.md
+Model_description/ebsem_long.md
+Model_description/equilibrium_planform.md
+Model_description/equilibrium_profile.md
+Model_description/hybrid_model.md
+Model_description/ihset_model.md
+Model_description/one_line.md
+User_manual/ihset_manual.md

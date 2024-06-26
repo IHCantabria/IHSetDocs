@@ -26,10 +26,9 @@ extensions = [
     "sphinx.ext.napoleon",
     "sphinx_rtd_theme",
     "myst_nb",
-    "sphinx.ext.mathjax",
-    # 'sphinxcontrib.autodoc_pydantic',
     "sphinx.ext.autosummary",
 ]
+
 templates_path = ["_templates"]
 exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
 mathjax_config = {
@@ -52,6 +51,14 @@ html_theme = "sphinx_rtd_theme"
 html_theme_options = {
     "display_version": True,
     "style_external_links": False,
+}
+html_sidebars = {
+    '**': [
+        'sidebar.html',  # Default sidebar content
+        'localtoc.html',  # Table of contents for the current page
+        'sourcelink.html',  # Link to the source code
+        'searchbox.html',  # Search box
+    ],
 }
 # html_theme = 'furo'
 # html_theme = 'sphinx_book_theme'
