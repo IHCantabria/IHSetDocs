@@ -5,18 +5,15 @@
 
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
-# from IHSetBernabeu.__init__ import __version__
 
-__version__ = "0.1.0"
-project = "IHSetBernabeu"
+project = "IHSetDocs"
 copyright = "2024, Lim, Changbin"
 author = "Lim, Changbin"
-version = release = __version__
 
 html_context = {
     "display_github": True,  # Integrate GitHub
     "github_user": "ihcantabria",  # Username
-    "github_repo": "IHSetBernabeu",  # Repo name
+    "github_repo": "IHSetDocs",  # Repo name
     "github_version": "main",  # Version
     "conf_py_path": "/docs/",
 }
@@ -33,6 +30,7 @@ extensions = [
     "sphinx.ext.mathjax",
     "sphinx.ext.githubpages",
 ]
+
 templates_path = ["_templates"]
 exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
 mathjax_config = {
@@ -41,7 +39,6 @@ mathjax_config = {
     },
 }
 mathjax_path = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js"
-
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
@@ -50,9 +47,18 @@ html_theme_options = {
     "display_version": True,
     "style_external_links": False,
 }
+html_sidebars = {
+    '**': [
+        'sidebar.html',  # Default sidebar content
+        'localtoc.html',  # Table of contents for the current page
+        'sourcelink.html',  # Link to the source code
+        'searchbox.html',  # Search box
+    ],
+}
 # html_theme = 'furo'
 # html_theme = 'sphinx_book_theme'
 
 html_static_path = ["_static"]
 html_logo = ""
-html_title = " v" + release
+html_title = " v"
+myst_heading_anchors = 3
