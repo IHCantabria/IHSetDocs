@@ -39,25 +39,25 @@ The following figure shows a preliminary list of the models to be included in th
 
 ## Contents
 
-### [User manual]([User_manual]/ihset_manual.md)
-- [Requirements]([User_manual]/ihset_manual.md)
-- [Data preprocessing]([User_manual]/ihset_manual.md)
-- [User tutorial]([User_manual]/ihset_manual.md)
+### [User manual](User_manual/ihset_manual.md)
+- [Requirements](User_manual/ihset_manual.md)
+- [Data preprocessing](User_manual/ihset_manual.md)
+- [User tutorial](User_manual/ihset_manual.md)
 
-### [Model formulation]([Model_description]/ihset_model.md)
-- [Static equilibrium (Beach profile)]([Model_description]/equilibrium_profile.md)
-- [Static equilibrium (Beach planform)]([Model_description]/equilibrium_planform.md)
-- [EBSEM - Cross-shore ]([Model_description]/ebsem_cross.md)
-- [EBSEM - Longshore ]([Model_description]/ebsem_long.md)
-- [One-line models]([Model_description]/one_line.md)
-- [Hybrid models]([Model_description]/hybrid_model.md)
+### [Model formulation](Model_description/ihset_model.md)
+- [Static equilibrium (Beach profile)](Model_description/equilibrium_profile.md)
+- [Static equilibrium (Beach planform)](Model_description/equilibrium_planform.md)
+- [EBSEM - Cross-shore ](Model_description/ebsem_cross.md)
+- [EBSEM - Longshore ](Model_description/ebsem_long.md)
+- [One-line models](Model_description/one_line.md)
+- [Hybrid models](Model_description/hybrid_model.md)
 
-### [Examples]([Examples]/examples.md)
-- [Examples]([Examples]/examples.md)
-- [Gallaries]([Examples]/examples.md)
+### [Examples](Examples/examples.md)
+- [Examples](Examples/examples.md)
+- [Gallaries](Examples/examples.md)
 
-### [Installation]([Installation]/installation.md)
-- [Installation]([Installation]/installation.md)
+### [Installation](Installation/installation.md)
+- [Installation](Installation/installation.md)
 
 ## Bibliography
 
@@ -74,19 +74,17 @@ The following figure shows a preliminary list of the models to be included in th
 - Turki, I., Medina, R., Coco, G., Gonzalez, M., 2013. An equilibrium model to predict shoreline rotation of pocket beaches. Mar. Geol. 346, 220–232. http://dx.doi.org/10.1016/j.margeo.2013.08.002
 - Yates, M.L., Guza, R.T., O’Reilly, W.C., 2009. Equilibrium shoreline response: Observations and modeling. J. Geophys. Res. Ocean. 114, 1–16. https://doi.org/10.1029/2009JC005359
 
-# Table of Contents
-
 ```{toctree}
 :maxdepth: 2
 :caption: Contents
 
-[Examples]/examples
-[Installation]/installation
-[Model_description]/ebsem_cross
-[Model_description]/ebsem_long
-[Model_description]/equilibrium_planform
-[Model_description]/equilibrium_profile
-[Model_description]/hybrid_model
-[Model_description]/ihset_model
-[Model_description]/one_line
-[User_manual]/ihset_manual
+Examples/examples
+Installation/installation
+Model_description/ebsem_cross
+Model_description/ebsem_long
+Model_description/equilibrium_planform
+Model_description/equilibrium_profile
+Model_description/hybrid_model
+Model_description/ihset_model
+Model_description/one_line
+User_manual/ihset_manual

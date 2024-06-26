@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Model formulation &mdash;  v</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="One-line Models" href="one_line.html" />
+    <link rel="prev" title="HYBRID MODELS" href="hybrid_model.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            IHSetDocs
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../Examples/examples.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Installation/installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ebsem_cross.html">Equilibrium-based shoreline evolution models (EBSEM) - Cross-shore</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ebsem_long.html">Equilibrium-based shoreline evolution models (EBSEM) - Longshore</a></li>
+<li class="toctree-l1"><a class="reference internal" href="equilibrium_planform.html">Static equilibrium (Beach Planform)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="equilibrium_profile.html">Static equilibrium (Beach Profile)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hybrid_model.html">HYBRID MODELS</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Model formulation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#overview">Overview</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#models-of-static-and-dynamic-beach-equilibrium-conditions">Models of static and dynamic beach equilibrium conditions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#models-of-shoreline-evolution-tending-to-equilibrium">Models of shoreline evolution tending to equilibrium</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#one-line-models">One-line models.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#hybrid-models">Hybrid models.</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#contents">Contents</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#static-equilibrium-beach-profile"><span class="xref myst">Static equilibrium (Beach Profile)</span></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#static-equilibrium-beach-planform"><span class="xref myst">Static equilibrium (Beach Planform)</span></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ebsem-cross-shore"><span class="xref myst">EBSEM - Cross-shore</span></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ebsem-longshore"><span class="xref myst">EBSEM - Longshore</span></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id1"><span class="xref myst">One-line models</span></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id2"><span class="xref myst">Hybrid models</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="one_line.html">One-line Models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../User_manual/ihset_manual.html">User manual</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">IHSetDocs</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Model formulation</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/ihcantabria/IHSetDocs/blob/main/docs/Model_description/ihset_model.md" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="model-formulation">
+<h1>Model formulation<a class="headerlink" href="#model-formulation" title="Link to this heading"></a></h1>
+<section id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Link to this heading"></a></h2>
+<p>In the documentation, there are multiple proposals for shoreline models, such as static and dynamic equilibrium planform and profile models, as well as 3D, multiline, one-line evolution models, conceptual models or models tending to equilibrium, and hybrid models. The present project focuses on proposals for static and dynamic equilibrium and conceptual models for diagnostic studies, as well as one-line and hybrid models for detailed studies, which are computationally efficient, for medium, long, and very long-term projections. The following is a brief description of the models available in the above typologies, highlighting the proposals developed by the IGC Group:</p>
+<section id="models-of-static-and-dynamic-beach-equilibrium-conditions">
+<h3>Models of static and dynamic beach equilibrium conditions<a class="headerlink" href="#models-of-static-and-dynamic-beach-equilibrium-conditions" title="Link to this heading"></a></h3>
+<p>Several authors have been interested in proposing empirical formulations, which attempt to reproduce the static equilibrium conditions of both the beach profile planform. Regarding the profile, there are proposals for one section (e.g. Dean 1991), two sections (e.g. Bernabeu 1999), or even three sections (e.g. Requejo et al., 2008).</p>
+<p>On the other hand, in terms of beach planform, there are numerous proposals considering expressions such as the logarithmic spiral (e.g. Silvester 1960), parabolic (e.g. Hsu and Evans 1989; González and Medina 2001; Elshinnawy et al., 2022), or hyperbolic tangent functions (e.g. Moreno and Kraus 1999). Despite the advantages and simplicity of the analytical formulations indicated above, these are not applicable in study sites with irregularities or obstacles in the bathymetry (reefs, rocky slabs,…). In these cases, the proposal presented by Gainza et al. (2018) is applicable.</p>
+</section>
+<section id="models-of-shoreline-evolution-tending-to-equilibrium">
+<h3>Models of shoreline evolution tending to equilibrium<a class="headerlink" href="#models-of-shoreline-evolution-tending-to-equilibrium" title="Link to this heading"></a></h3>
+<p>These models are conceptually based on the equilibrium between destructive and constructive forces acting on a beach. They allow the user to obtain the position of the shoreline at a given time, either due to the action of storms, seasonal changes, or changes caused by interannual effects. The approach of these models can be categorized according to the direction of sediment transport; either longitudinal or transverse. In the literature, several models have been proposed that only consider the transverse displacement of the coastline (e.g., Yates et al., 2009; Jara et al., 2015; Jaramillo et al. 2020).</p>
+<p>Alternatively, there are few proposals that infer longshore processes. Among them, there are simplified models that reproduce changes in shoreline orientation which are mainly applicable to embedded beaches (e.g. Turki et al., 2013 and Jaramillo et al., 2021a). (As an integration of both processes, we have the IH-MOOSE model, proposed by Jaramillo et al., (2021b), which integrates cross-shore component, rotation, and parabolic plan shape expression, being a model tending to equilibrium applicable to embedded beaches.)
+The IH-MOOSE model incorporates processes described by Jaramillo et al. (2021b), including the cross-shore component, rotation, and parabolic planform expressions. These features aim to achieve equilibrium and are particularly relevant for embedded beaches.</p>
+</section>
+<section id="one-line-models">
+<h3>One-line models.<a class="headerlink" href="#one-line-models" title="Link to this heading"></a></h3>
+<p>One-line models are most commonly used to estimate long-term mean changes due to longitudinal sediment transport. These models use the sediment conservation formula considering turbulent flow and empirical longitudinal transport relationships, without addressing cross-shore transport. They assume that the profile maintains a constant shape that shifts seaward or landward during simulations, which means that they cannot be applied for the analysis of short-term changes in which transverse transport across the beach profile is significant. Within this typology, it is worth highlighting the CHRONOS model developed by the IGC Group of IHCantabria. This is a one-line model that simulates medium- to long-term changes (years), including wave propagation with the Ref-Dif OLUCA and Refract models, then updating the bathymetry for propagation and its evolution while preserving the sediment balance throughout the process.</p>
+</section>
+<section id="hybrid-models">
+<h3>Hybrid models.<a class="headerlink" href="#hybrid-models" title="Link to this heading"></a></h3>
+<p>Hybrid models consist of shoreline evolution models that combine transverse and longitudinal transport processes which are applicable on scales from days to decades. They are models of reduced complexity, with a reasonable computational cost, that assume a series of simplifying assumptions following the needs of the study. Examples of such models are the pioneering CosMos-COAST (Vitousek et al., 2017), IH-LANS (Alvarez-Cuesta et al., 2021), and IH-MOOSE (Jaramillo et al., 2021b). These hybrid models adopt several simplifying assumptions that allow coastline change calculations, considering both processes efficiently. Their major limitation, however, is that they do not preserve the sedimentary balance.</p>
+</section>
+</section>
+<section id="contents">
+<h2>Contents<a class="headerlink" href="#contents" title="Link to this heading"></a></h2>
+<section id="static-equilibrium-beach-profile">
+<h3><a class="reference internal" href="equilibrium_profile.html#static-equilibrium-beach-profile"><span class="std std-ref">Static equilibrium (Beach Profile)</span></a><a class="headerlink" href="#static-equilibrium-beach-profile" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p><a class="reference internal" href="equilibrium_profile.html#ihsetdean-dean-1991"><span class="std std-ref">IHSetDean (Dean, 1991)</span></a></p></li>
+<li><p><a class="reference internal" href="equilibrium_profile.html#ihsetbernabeu-bernabeu-et-al-2003"><span class="std std-ref">IHSetBernabeu (Bernabeu et al., 2003)</span></a></p></li>
+</ul>
+</section>
+<section id="static-equilibrium-beach-planform">
+<h3><a class="reference internal" href="equilibrium_planform.html#static-equilibrium-beach-planform"><span class="std std-ref">Static equilibrium (Beach Planform)</span></a><a class="headerlink" href="#static-equilibrium-beach-planform" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p><a class="reference internal" href="equilibrium_planform.html#ihsetgonzalez-hsu-and-evans-1989-gonzalez-and-medina-2001"><span class="std std-ref">IHSetGonzalez (Hsu and Evans, 1989; Gonzalez and Medina, 2001)</span></a></p></li>
+</ul>
+</section>
+<section id="ebsem-cross-shore">
+<h3><a class="reference internal" href="ebsem_cross.html#equilibrium-based-shoreline-evolution-models-ebsem-cross-shore"><span class="std std-ref">EBSEM - Cross-shore</span></a><a class="headerlink" href="#ebsem-cross-shore" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p><a class="reference internal" href="ebsem_cross.html#ihsetmillerdean-miller-and-dean-2004"><span class="std std-ref">IHSetMillerDean (Miller and Dean, 2004)</span></a></p></li>
+<li><p><a class="reference internal" href="ebsem_cross.html#ihsetyates-yates-et-al-2009"><span class="std std-ref">IHSetYates (Yates et al., 2009)</span></a></p></li>
+<li><p><a class="reference internal" href="ebsem_cross.html#ihsetshorefor-davidson-et-al-2013"><span class="std std-ref">IHSetShorefor (Davidson et al., 2013)</span></a></p></li>
+<li><p><a class="reference internal" href="ebsem_cross.html#ihsetjaramillo-jaramillo-et-al-2020"><span class="std std-ref">IHSetJaramillo (Jaramillo et al., 2020)</span></a></p></li>
+<li><p><a class="reference internal" href="ebsem_cross.html#ihsetlim-lim-et-al-2020"><span class="std std-ref">IHSetLim (Lim et al., 2020)</span></a></p></li>
+</ul>
+</section>
+<section id="ebsem-longshore">
+<h3><a class="reference internal" href="ebsem_long.html#equilibrium-based-shoreline-evolution-models-ebsem-longshore"><span class="std std-ref">EBSEM - Longshore</span></a><a class="headerlink" href="#ebsem-longshore" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p><a class="reference internal" href="ebsem_long.html#ihsetturki-turki-et-al-2013"><span class="std std-ref">IHSetTurki (Turki et al., 2013)</span></a></p></li>
+<li><p><a class="reference internal" href="ebsem_long.html#ihsetjaramillo21a-jaramillo-et-al-2021a"><span class="std std-ref">IHSetJaramillo21a (Jaramillo et al., 2021a)</span></a></p></li>
+</ul>
+</section>
+<section id="id1">
+<h3><a class="reference internal" href="one_line.html#one-line-models"><span class="std std-ref">One-line models</span></a><a class="headerlink" href="#id1" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p><a class="reference internal" href="one_line.html#genesis-hanson-and-kraus-1989"><span class="std std-ref">GENESIS (Hanson and Kraus, 1989)</span></a></p></li>
+<li><p><a class="reference internal" href="one_line.html#chronos-xxxx-xxxx"><span class="std std-ref">CHRONOS (XXXX, XXXX)</span></a></p></li>
+</ul>
+</section>
+<section id="id2">
+<h3><a class="reference internal" href="hybrid_model.html#hybrid-models"><span class="std std-ref">Hybrid models</span></a><a class="headerlink" href="#id2" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p><a class="reference internal" href="hybrid_model.html#ihsetih-moose-jaramillo-et-al-2021b"><span class="std std-ref">IHSetIH-MOOSE (Jaramillo et al., 2021b)</span></a></p></li>
+</ul>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="hybrid_model.html" class="btn btn-neutral float-left" title="HYBRID MODELS" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="one_line.html" class="btn btn-neutral float-right" title="One-line Models" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Lim, Changbin.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
