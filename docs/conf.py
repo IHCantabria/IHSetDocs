@@ -25,7 +25,7 @@ extensions = [
     "sphinx.ext.autodoc",
     "sphinx.ext.napoleon",
     "sphinx_rtd_theme",
-    "myst_nb",
+    "myst_parser",
     "sphinx.ext.autosummary",
     "sphinx.ext.mathjax",
     "sphinx.ext.githubpages",
@@ -38,7 +38,8 @@ mathjax_config = {
         "extensions": ["AMSmath.js", "AMSsymbols.js"],
     },
 }
-mathjax_path = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js"
+mathjax_path = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
+
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
@@ -62,3 +63,6 @@ html_static_path = ["_static"]
 html_logo = ""
 html_title = " v"
 myst_heading_anchors = 3
+
+def setup(app):
+    app.set_html_assets_policy('always')
