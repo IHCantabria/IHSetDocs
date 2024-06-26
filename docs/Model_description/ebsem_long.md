@@ -35,7 +35,7 @@ $$
 - $l$ : the beach length
 - $K$ : the transport coefficient which is related to sediment characteristics such as sediment density $ρ_s$, water density $ρ_w$, gravity acceleration $g$, sediment porosity a and dimensionless proportionality coefficient $k$
 - $F_r$ : the energy flux per unit required to move sediments 
-- $h^*$ : the closure depth which is expressed as the function of the wave height $H_s$ ($h^*=C_cH_s^{0.67}$; where $C_c$ is a constant value that differs from one beach to another)
+- $h^{*}$ : the closure depth which is expressed as the function of the wave height $H_s$ ($h^{*}=C_cH_s^{0.67}$; where $C_c$ is a constant value that differs from one beach to another)
 - $x(β,R(t))$ : the coefficient which is defined as follows:
 
 $$
