@@ -1,4 +1,4 @@
-# HYBRID MODELS
+# Hybrid Models
 
 ## IHSetIH-MOOSE (Jaramillo et al., 2021b)
 
