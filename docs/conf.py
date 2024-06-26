@@ -35,7 +35,12 @@ extensions = [
 ]
 templates_path = ["_templates"]
 exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
-
+mathjax_config = {
+    "TeX": {
+        "extensions": ["AMSmath.js", "AMSsymbols.js"],
+    },
+}
+mathjax_path = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js"
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
