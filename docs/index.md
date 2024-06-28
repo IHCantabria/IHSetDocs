@@ -39,16 +39,6 @@ The following figure shows a preliminary list of the models to be included in th
 
 **Fig. 1-2. The general structure of the IH-SET.**
 
-## Contents
-
-### [User manual](User_manual/ihset_manual.md)
-
-### [Model formulation](Model_description/ihset_model.md)
-
-### [Examples](Examples/examples.md)
-
-### [Installation](Installation/installation.md)
-
 ## Bibliography
 
 - Davidson, M. A., Splinter, K. D., Turner, I. L., 2013. A simple equilibrium model for predicting shoreline change, Coast. Eng., 73, 191–202. https://doi.org/10.1016/j.coastaleng.2012.11.002
